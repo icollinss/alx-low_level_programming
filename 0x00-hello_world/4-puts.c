@@ -2,11 +2,11 @@
 
 /**
  *
- *  * main - prints a phrase
+ * main - prints a phrase
  *
- *  * Return: 0
+ * Return: Always 0 (success)
  *
- *  */
+ */
 
 
 int main(void)
