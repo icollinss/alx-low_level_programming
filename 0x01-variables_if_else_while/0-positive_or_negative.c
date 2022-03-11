@@ -4,9 +4,9 @@
 
 /**
  * main - main block
- * Description - enter random number
- * determine if its negative or positive
- * Return: Always 0 (Success)
+ * Description - enter a random number
+ * determine if it is negative or positive
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -16,11 +16,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n > 0)
-		printf("%i is positive", n);
+		printf("%i is positive\n", n);
 	else if (n < 0)
-		printf("%i is negative", n);
+		printf("%i is negative\n", n);
 	else
-		printf("%i is zero", n);
+		printf("%i is zero\n", n);
 
 	return (0);
 }
