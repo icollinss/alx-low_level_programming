@@ -3,12 +3,10 @@
 
 
 /**
+ * main - prints a given phrase
  *
- *  * main - prints a given phrase
- *
- *   * Return: 0
- *
- *    */
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
