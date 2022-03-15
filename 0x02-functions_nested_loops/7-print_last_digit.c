@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * main
- * print last digit - returns last digit
+ * print_last_digit - return the last digit
  * @a: input
  * Return: 0 or 1
  */
-int print_last_digit(int a);
+
+int print_last_digit(int a)
+
 {
 	int b;
 
