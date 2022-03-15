@@ -5,6 +5,7 @@
  * 5 below 1024 (excluded), followed by a new line
  * Return: 0
  */
+
 int main(void)
 {
 	int i = 0;
