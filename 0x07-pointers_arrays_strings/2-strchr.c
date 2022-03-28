@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- *  *-strchr - locates a character in a string
- *  @s: char type pointer
- *  @c: char type character
- *  Return: the character and NULL if not found
+ * *_strchr - locates a character in a string
+ * @s: char type pointer
+ * @c: char type character
+ * Return: the character and NULL if not found
  */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int a;
 
