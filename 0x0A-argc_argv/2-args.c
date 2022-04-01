@@ -1,8 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
- * main - prints the arguments 
+ * main - prints the arguments
  * @argc: number of arguments
  * @argv: the arguments
  * Return: 0
