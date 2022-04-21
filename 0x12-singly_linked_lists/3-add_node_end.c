@@ -38,7 +38,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp->next = a;
 
 	return (a);
-}#include <stdlib.h>
+}
+
+#include <stdlib.h>
 #include <string.h>
 #include "lists.h"
 
