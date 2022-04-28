@@ -1,24 +1,34 @@
 #include "main.h"
 
 /**
- * clear_bit - sets the value of a bit to 0.
- * at a given index.
- * @n: pointer of an unsigned long int.
- * @index: index of the bit.
- *
- * Return: 1 if it worked, -1 if it didn't.
+ * binary_to_uint - converts a binary number to an unsigned int
+ * @b: const char
+ * Return: the converted number, or 0 if
+ * there is one or more chars in the
+ * string b that is not 0 or 1
+ * b is NULL
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int m;
+	unsigned int x = 0;
+	int base = 1, i = 0;
 
-	if (index > 63)
-		return (-1);
+	if (b == NULL)
+		return (0);
 
-	m = 1 << index;
+	while (b[i + 1])
+	{
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		i++;
+	}
+	while (i >= 0)
+	{
+		x += ((b[i] - '0') * base);
+		base *= 2;
+		i--;
+	}
 
-	if (*n & m)
-		*n ^= m;
-
-	return (1);
+	return (x);
 }
